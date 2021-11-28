@@ -15,8 +15,7 @@ public class ContaCorrente {
             return true;
         }
     }
-    public boolean Depositar(double valor){
+    public void Depositar(double valor){
         this.saldo += valor;
-        return true;
     }
 }
