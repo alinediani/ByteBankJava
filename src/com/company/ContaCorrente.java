@@ -18,4 +18,14 @@ public class ContaCorrente {
     public void Depositar(double valor){
         this.saldo += valor;
     }
+    public boolean Transferir(double valor, ContaCorrente contaDestino){
+        if (this.saldo < valor){
+            return false;
+        }
+        else {
+            contaDestino.saldo += valor;
+            this.saldo -= valor;
+            return true;
+        }
+    }
 }

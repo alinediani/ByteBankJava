@@ -17,6 +17,7 @@ public class Main {
 
         contaDaAline.Sacar(1000);
         contaDaAna.Depositar(1000);
+        contaDaAline.Transferir(1000,contaDaAna);
 
         System.out.println(contaDaAline.titular);
         System.out.println(contaDaAline.agencia);
