@@ -5,7 +5,20 @@ public class ContaCorrente {
     public Cliente titular;
     public int agencia;
     public int conta;
-    public double saldo=100;
+    private double saldo=100;
+
+    public void DefinirSaldo(double saldoNovo){
+        if (saldoNovo < 0){
+            return;
+        }
+        else {
+            this.saldo = saldoNovo;
+        }
+    }
+
+    public double ObterSaldo(){
+        return saldo;
+    }
 
     public boolean Sacar(double valor){
         if (this.saldo < valor){
