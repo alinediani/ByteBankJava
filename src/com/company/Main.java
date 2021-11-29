@@ -4,13 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
         ContaCorrente contaDaAline = new ContaCorrente();
-        contaDaAline.titular = "Aline";
+        Cliente clienteAline = new Cliente();
+        Cliente clienteAna = new Cliente();
+        contaDaAline.titular = clienteAline;
         contaDaAline.agencia = 123;
         contaDaAline.conta = 23323121;
         contaDaAline.saldo = 4554.10;
 
         ContaCorrente contaDaAna = new ContaCorrente();
-        contaDaAna.titular = "Ana";
+        contaDaAna.titular = clienteAna;
         contaDaAna.agencia = 123;
         contaDaAna.conta = 23323122;
         contaDaAna.saldo = 590;

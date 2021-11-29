@@ -1,7 +1,8 @@
 package com.company;
 
 public class ContaCorrente {
-    public String titular;
+    Cliente cliente = new Cliente();
+    public Cliente titular;
     public int agencia;
     public int conta;
     public double saldo=100;
