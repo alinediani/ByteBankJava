@@ -7,7 +7,9 @@ public class ContaCorrente {
     public int conta;
     private double saldo=100;
 
-    public void DefinirSaldo(double saldoNovo){
+
+
+    public void SetSaldo(double saldoNovo){
         if (saldoNovo < 0){
             return;
         }
@@ -16,7 +18,7 @@ public class ContaCorrente {
         }
     }
 
-    public double ObterSaldo(){
+    public double GetSaldo(){
         return saldo;
     }
 
